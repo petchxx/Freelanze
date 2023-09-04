@@ -1,0 +1,99 @@
+[
+    {
+        "Service_ID": 1,
+        "Freelancer_ID": 1,
+        "Title": "Web Development",
+        "ImgUrl": "https://picsum.photos/seed/picsum/200/300",
+        "Description": "I will develop a website for you",
+        "Price": 100.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 2,
+        "Freelancer_ID": 1,
+        "Title": "App Development",
+        "Description": "I will develop a application for you",
+        "Price": 100.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 3,
+        "Freelancer_ID": 2,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 200.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 4,
+        "Freelancer_ID": 2,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 200.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 5,
+        "Freelancer_ID": 3,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 300.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 6,
+        "Freelancer_ID": 3,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 300.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 7,
+        "Freelancer_ID": 4,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 400.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 8,
+        "Freelancer_ID": 4,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 400.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 9,
+        "Freelancer_ID": 5,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 500.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 10,
+        "Freelancer_ID": 5,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 500.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 11,
+        "Freelancer_ID": 6,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 600.00,
+        "Service_Category": "Programming & Tech"
+    },
+    {
+        "Service_ID": 12,
+        "Freelancer_ID": 6,
+        "Title": "Web Development",
+        "Description": "I will develop a website for you",
+        "Price": 600.00,
+        "Service_Category": "Programming & Tech"
+    }
+]

@@ -32,7 +32,8 @@ function SignUpPage() {
                         <p>Confirm Password</p>
                         <input type="password" placeholder="Enter your password" className="border-2 border-gray-300 w-full py-2 px-4 rounded-md" />
                     </div>
-                    <div className="mt-8 flex flex-col items-center">
+
+                    <div className="mt-10 flex flex-col items-center">
                         <button className="bg-primary text-white font-bold py-2 px-4 rounded-md w-full">Sign up</button>
                         <p className='mt-2'>Already have an account? <Link to="/login" className="text-primary">Login</Link></p>
                     </div>

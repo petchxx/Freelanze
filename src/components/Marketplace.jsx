@@ -7,48 +7,39 @@ const Marketplace = () => {
         {
             icon: "a",
             title: "Graphics & Design",
-            category: "Graphics-and-Design",
         },
         {
             icon: "a",
             title: "Digital Marketing",
-            category: "Digital-Marketing",
         },
         {
             icon: "a",
             title: "Writing & Translation",
-            category: "Writing-and-Translation",
         },
         {
             icon: "a",
             title: "Video & Animation",
-            category: "Video-and-Animation",
         },
         {
             icon: "a",
             title: "Music & Audio",
-            category: "Music-and-Audio",
         },
         {
             icon: "a",
             title: "Programming & Tech",
-            category: "Programming-and-Tech",
 
         },
         {
             icon: "a",
             title: "Business",
-            category: "Business",
         },
         {
             icon: "a",
             title: "Lifestyle",
-            category: "Lifestyle",
         },
         {
             icon: "a",
             title: "AI Services",
-            category: "AI-Services",
         },
     ];
     return (
@@ -61,7 +52,7 @@ const Marketplace = () => {
                     <div className="w-full grid grid-cols-3 md:grid-cols-5 justify-center items-center gap-7 mt-6">
                         {marketsData.map((item, i) => (
                             <Link
-                                to={"/services/" + item.category}
+                                to={"/services/" + item.title}
                                 key={i}
                                 className="w-full flex items-center justify-center flex-col gap-4 group"
                             >

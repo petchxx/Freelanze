@@ -1,0 +1,34 @@
+[
+    {
+        "Freelancer_ID": 1,
+        "User_ID": 1,
+        "Skills": "Web Development, UI Design",
+        "Contacts": "user1@example.com, +1234567890",
+        "Experience": "5 years in web development",
+        "Languages": "English, Spanish"
+    },
+    {
+        "Freelancer_ID": 2,
+        "User_ID": 2,
+        "Skills": "Graphic Design, Adobe Suite",
+        "Contacts": "user2@example.com, +0987654321",
+        "Experience": "3 years in graphic design",
+        "Languages": "English, French"
+    },
+    {
+        "Freelancer_ID": 3,
+        "User_ID": 3,
+        "Skills": "Digital Marketing, SEO",
+        "Contacts": "user3@example.com, +1122334455",
+        "Experience": "2 years in digital marketing",
+        "Languages": "English, Chinese"
+    },
+    {
+        "Freelancer_ID": 4,
+        "User_ID": 4,
+        "Skills": "Data Analysis, Python",
+        "Contacts": "user4@example.com, +2233445566",
+        "Experience": "4 years in data analysis",
+        "Languages": "English, German"
+    }
+]

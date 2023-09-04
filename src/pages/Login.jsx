@@ -2,8 +2,34 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Marketplace from '../components/MarketPlace'
 import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import users from '../data/users.json'
 
 function LoginPage() {
+    const navigate = useNavigate();
+    const [email, setEmail] = React.useState("");
+    const [password, setPassword] = React.useState("");
+    const serviceId = localStorage.getItem("serviceId");
+
+    const handleLogin = () => {
+        console.log(email, password)
+        const user = users.find((user) => {
+            return user.Email === email && user.Password === password;
+        });
+        if (user) {
+            localStorage.setItem("user", JSON.stringify(user));
+            if (serviceId) {
+
+                navigate(`/service/${serviceId}`);
+                localStorage.removeItem("serviceId");
+
+            } else {
+                navigate("/user");
+            }
+        } else {
+            alert("Invalid email or password");
+        }
+    }
     return (
         <>
             <div className="bg-slate-100 min-h-screen flex justify-center items-center">
@@ -23,19 +49,29 @@ function LoginPage() {
 
                     <div className="mt-4">
                         <p>Email</p>
-                        <input type="text" placeholder="Enter your email" className="border-2 border-gray-300 w-full py-2 px-4 rounded-md" />
+                        <input type="text" placeholder="Enter your email" className="border-2 border-gray-300 w-full py-2 px-4 rounded-md"
+                            value={email}
+                            onChange={(e) => { setEmail(e.target.value) }}
+
+                        />
                     </div>
                     <div className="mt-4">
                         <p>Password</p>
-                        <input type="password" placeholder="Enter your password" className="border-2 border-gray-300 w-full py-2 px-4 rounded-md" />
+                        <input type="password" placeholder="Enter your password" className="border-2 border-gray-300 w-full py-2 px-4 rounded-md"
+                            value={password}
+                            onChange={(e) => { setPassword(e.target.value) }}
+                        />
                     </div>
-                    {/* remember me */}
-                    <div className="mt-4 flex items-center gap-2">
-                        <input type="checkbox" className="border-2 border-gray-300 w-5 h-5" />
-                        <p>Remember me</p>
-                    </div>
-                    <div className="mt-4 flex flex-col items-center">
-                        <button className="bg-primary text-white font-bold py-2 px-4 rounded-md w-full">Login</button>
+
+
+
+                    <div className="mt-10 flex flex-col items-center">
+                        <button className="bg-primary text-white font-bold py-2 px-4 rounded-md w-full"
+                            onClick={() => {
+                                handleLogin()
+                            }}
+
+                        >Login</button>
                         <p className='mt-2'>Don't have an account? <Link to="/signup" className="text-primary">Sign up</Link></p>
                     </div>
 

@@ -12,19 +12,19 @@ function Home() {
     return (
         <>
             <Navbar />
-            <div className="h-screen flex justify-center items-center bg-gray-100">
+            <div className="flex items-center justify-center h-screen bg-gray-100">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold">Welcome to Freelanzè</h1>
-                    <p className="text-l mt-5">Millions of talented people. Millions of amazing services.</p>
+                    <p className="mt-5 text-l">Millions of talented people. Millions of amazing services.</p>
                     {/* search */}
                     <div className="mt-5">
-                        <input type="text" placeholder="Search for services" className="border-2 border-gray-300 w-96 py-2 px-4 rounded-full"
+                        <input type="text" placeholder="Search for services" className="px-4 py-2 border-2 border-gray-300 rounded-full w-96"
                             onChange={(e) => { setSearch(e.target.value) }}
                             value={search}
                         />
                     </div>
                     <div className="mt-5">
-                        <button className="bg-primary text-white font-bold py-2 px-4 rounded-full" onClick={() => { navigate("/search/" + search) }}>Search</button>
+                        <button className="px-4 py-2 font-bold text-white rounded-full bg-primary" onClick={() => { navigate("/search/" + search) }}>Search</button>
                     </div>
                 </div>
             </div>

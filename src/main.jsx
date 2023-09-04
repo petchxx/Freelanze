@@ -11,8 +11,9 @@ import "./index.css";
 import Home from "./pages/Home";
 import SignUpPage from "./pages/SignUp";
 import ServicesPage from "./pages/Services";
+import ServicePage from "./pages/Service";
 import SearchPage from "./pages/Search";
-import UsersPage from "./pages/Users";
+import UserPage from "./pages/User";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
     element: <SignUpPage />,
   },
   {
-    path: "/users",
-    element: <UsersPage />,
+    path: "/user",
+    element: <UserPage />,
   },
   {
     path: "/search/:query",
@@ -38,7 +39,15 @@ const router = createBrowserRouter([
   {
     path: "/services/:category",
     element: <ServicesPage />,
-  }
+  },
+  {
+    path: "/service/:serviceId",
+    element: <ServicePage />,
+  },
+  {
+    path: "*",
+    element: <div>404</div>,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
