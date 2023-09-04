@@ -12,7 +12,7 @@ function LoginPage() {
     const serviceId = localStorage.getItem("serviceId");
 
     const handleLogin = () => {
-        console.log(email, password)
+        // console.log(email, password)
         const user = users.find((user) => {
             return user.Email === email && user.Password === password;
         });

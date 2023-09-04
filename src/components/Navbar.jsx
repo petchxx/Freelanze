@@ -80,7 +80,7 @@ const Navbar = () => {
     }, []);
 
     useEffect(() => {
-        console.log(user);
+        // console.log(user);
     }, [user]);
 
     const handleLogout = () => {
@@ -144,7 +144,14 @@ const Navbar = () => {
                                 className={`absolute top-14 right-0 w-64 bg-white rounded-md shadow-lg p-4 transition-all duration-300 ${openDrop ? "opacity-100" : "opacity-0 pointer-events-none"
                                     } z-10`}
                             >
-                                <div className="flex items-center gap-2py-2 px-2 cursor-pointer mt-2" onClick={() => {
+                                <div className="flex items-center gap-2 py-2 px-2 cursor-pointer mt-2" onClick={() => {
+                                    navigate("/user");
+                                }}>
+                                    <div className="flex flex-col">
+                                        <p className="font-semibold ">Orders</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-2 py-2 px-2 cursor-pointer mt-2" onClick={() => {
 
                                 }}>
                                     <div className="flex flex-col">

@@ -3,7 +3,7 @@
         "Service_ID": 1,
         "Freelancer_ID": 1,
         "Title": "Web Development",
-        "ImgUrl": "https://picsum.photos/seed/picsum/200/300",
+        "ImgUrl": "https://picsum.photos/seed/picsum/400/300",
         "Description": "I will develop a website for you",
         "Price": 100.00,
         "Service_Category": "Programming & Tech"
